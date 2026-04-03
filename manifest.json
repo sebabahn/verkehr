@@ -1,0 +1,22 @@
+{
+  "name": "Autobahnüberwachung FF Oberndorf",
+  "short_name": "Autobahnüberwachung",
+  "description": "Echtzeit-Verkehrslage mit Waze-Daten für Feuerwehr Oberndorf",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#1e1e1e",
+  "theme_color": "#e74c3c",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
