@@ -1,0 +1,45 @@
+{
+  "name": "feuerwehr-oberndorf-verkehrsdashboard",
+  "version": "1.3.0",
+  "description": "Verkehrsdashboard für Feuerwehr Oberndorf basierend auf Waze-Daten mit Leaflet, Turf.js und Alarmfunktion",
+  "author": "Feuerwehr Oberndorf",
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "echo '🚀 Dashboard wird gestartet... Bitte einen lokalen Webserver (z.B. Live Server in VS Code) verwenden.'",
+    "dev": "echo '📂 Öffne index.html mit Live Server oder einem anderen statischen Webserver'",
+    "lint": "eslint js/**/*.js",
+    "format": "prettier --write \"js/**/*.js\" \"*.html\" \"css/**/*.css\"",
+    "build": "echo '✅ Kein Build-Schritt nötig (reine Client-Seite mit ES Modules)'"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "waze",
+    "traffic",
+    "dashboard",
+    "leaflet",
+    "feuerwehr",
+    "verkehrslage",
+    "alarm",
+    "stau",
+    "unfall"
+  ],
+  "homepage": "https://github.com/sebabahn/verkehr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebabahn/verkehr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sebabahn/verkehr/issues"
+  }
+}
