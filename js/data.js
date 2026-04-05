@@ -60,8 +60,8 @@ console.log("✅ data.js geladen – Bischbrunn-Polygon stark verkleinert. 'Ande
 
 // Ãœbersetzungs-Objekte
 export const jamLevelsTrans = {
-  1: "ZÃ¤hflieÃŸender Verkehr",
-  2: "MÃ¤ÃŸiger Stau",
+  1: "Zähfließender Verkehr",
+  2: "Mäßiger Stau",
   3: "Starker Stau",
   4: "Stillstand",
   5: "Sperrung"
@@ -78,46 +78,46 @@ export const alertTypesTrans = {
 export const alertSubtypesTrans = {
   "ACCIDENT_MINOR": "Leichter Unfall",
   "ACCIDENT_MAJOR": "Schwerer Unfall",
-  "JAM_MODERATE_TRAFFIC": "MÃ¤ÃŸiger Stau",
+  "JAM_MODERATE_TRAFFIC": "Mäßiger Stau",
   "JAM_HEAVY_TRAFFIC": "Starker Stau",
   "JAM_STAND_STILL_TRAFFIC": "Stillstand",
-  "JAM_LIGHT_TRAFFIC": "ZÃ¤hflieÃŸender Verkehr",
-  "HAZARD_ON_ROAD": "Gefahr auf der StraÃŸe",
-  "HAZARD_ON_SHOULDER": "Gefahr am StraÃŸenrand",
+  "JAM_LIGHT_TRAFFIC": "Zähfließender Verkehr",
+  "HAZARD_ON_ROAD": "Gefahr auf der Straße",
+  "HAZARD_ON_SHOULDER": "Gefahr am Straßenrand",
   "HAZARD_WEATHER": "Witterungsbedingte Gefahr",
-  "HAZARD_ON_ROAD_OBJECT": "GegenstÃ¤nde auf der Fahrbahn",
+  "HAZARD_ON_ROAD_OBJECT": "Gegenstände auf der Fahrbahn",
   "HAZARD_ON_ROAD_POT_HOLE": "Schlagloch auf der Fahrbahn",
   "HAZARD_ON_ROAD_ROAD_KILL": "Totes Tier auf der Fahrbahn",
-  "HAZARD_ON_SHOULDER_CAR_STOPPED": "Stehendes Fahrzeug am StraÃŸenrand",
-  "HAZARD_ON_SHOULDER_ANIMALS": "Totes Tier am StraÃŸenrand",
+  "HAZARD_ON_SHOULDER_CAR_STOPPED": "Stehendes Fahrzeug am Straßenrand",
+  "HAZARD_ON_SHOULDER_ANIMALS": "Totes Tier am Straßenrand",
   "HAZARD_ON_SHOULDER_MISSING_SIGN": "Fehlendes Verkehrszeichen",
   "HAZARD_WEATHER_FOG": "Nebelwarnung",
   "HAZARD_WEATHER_HAIL": "Hagelwarnung",
   "HAZARD_WEATHER_HEAVY_RAIN": "Starkregenwarnung",
   "HAZARD_WEATHER_HEAVY_SNOW": "Starker Schneefall",
-  "HAZARD_WEATHER_FLOOD": "Ãœberflutungsgefahr",
+  "HAZARD_WEATHER_FLOOD": "Überflutungsgefahr",
   "HAZARD_WEATHER_MONSOON": "Monsoonwarnung",
   "HAZARD_WEATHER_TORNADO": "Tornadowarnung",
   "HAZARD_WEATHER_HEAT_WAVE": "Hitzewarnung",
   "HAZARD_WEATHER_HURRICANE": "Hurrikanwarnung",
   "HAZARD_WEATHER_FREEZING_RAIN": "Gefahr vor gefrierendem Regen",
   "HAZARD_ON_ROAD_LANE_CLOSED": "Gesperrte Spur",
-  "HAZARD_ON_ROAD_OIL": "Ã–lspur",
+  "HAZARD_ON_ROAD_OIL": "Ölspur",
   "HAZARD_ON_ROAD_ICE": "Blitzeiswarnung",
   "HAZARD_ON_ROAD_CONSTRUCTION": "Baustelle",
   "HAZARD_ON_ROAD_CAR_STOPPED": "Stehendes Fahrzeug auf der Fahrbahn",
   "HAZARD_ON_ROAD_TRAFFIC_LIGHT_FAULT": "Defekte Ampelanlage",
   "HAZARD_ON_ROAD_EMERGENCY_VEHICLE": "Einsatzfahrzeuge auf der Fahrbahn",
-  "ROAD_CLOSED_HAZARD": "Sperrung durch Gefahr auf der StraÃŸe",
+  "ROAD_CLOSED_HAZARD": "Sperrung durch Gefahr auf der Straße",
   "ROAD_CLOSED_CONSTRUCTION": "Sperrung durch Baustelle",
   "ROAD_CLOSED_EVENT": "Sperrung durch Veranstaltung"
 };
 
 export const irrTypesTrans = {
-  "SMALL": "Kleine VerkehrsstÃ¶rung",
-  "MEDIUM": "Mittlere VerkehrsstÃ¶rung",
-  "LARGE": "GroÃŸe VerkehrsstÃ¶rung",
-  "HUGE": "AuÃŸergewÃ¶hnliche VerkehrsstÃ¶rung"
+  "SMALL": "Kleine Verkehrsstörung",
+  "MEDIUM": "Mittlere Verkehrsstörung",
+  "LARGE": "GroÃŸe Verkehrsstörung",
+  "HUGE": "Außergewöhnliche Verkehrsstörung"
 };
 
 

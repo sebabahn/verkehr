@@ -3,7 +3,11 @@
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
-header('Cache-Control: public, max-age=5');   // 90 Sekunden Cache
+//header('Cache-Control: public, max-age=5');   // 90 Sekunden Cache
+
+header("Cache-Control: no-cache, no-store, must-revalidate");
+header("Pragma: no-cache");
+header("Expires: 0");
 
 // === Deine feste Feed-URL ===
 $source_url = 'https://www.waze.com/row-partnerhub-api/partners/11640014449/waze-feeds/b0f6256e-db98-410b-b5c0-5df952962e64?format=1';

@@ -1,4 +1,5 @@
-// main.js – Komplette überarbeitete Version mit fixem Zurück-Button bei vergrößerter Karte
+// main.js – Komplette überarbeitete Version mit aggressivem No-Cache für proxy.php
+// Version: 2026-04-04 – optimiert für Workbox + striktes No-Cache-Verhalten
 
 "use strict";
 
@@ -306,70 +307,9 @@ function waitForMap(callback, maxAttempts = 50) {
   }, 80);
 }
 
-// Initialisierung
-function initApp() {
-  injectAlarmStyles();
-
-  appState.alertClusterGroup = L.markerClusterGroup({
-    chunkedLoading: true,
-    showCoverageOnHover: false,
-    maxClusterRadius: 45,
-    spiderfyOnMaxZoom: true
-  });
-
-  appState.jamLayerGroup = L.layerGroup();
-  appState.irregularityLayerGroup = L.layerGroup();
-
-  appState.alertClusterGroup.addTo(appState.map);
-  appState.jamLayerGroup.addTo(appState.map);
-  appState.irregularityLayerGroup.addTo(appState.map);
-
-  appState.bigPolygonCoords = parseWKT(bigPolygonWKT);
-
-  appState.categories = rawCategories.map(cat => ({
-    name: cat.name,
-    coords: parseWKT(cat.wkt),
-    items: { alerts: [], jams: [], irregularities: [] },
-    notifications: cat.notifications || { alerts: [], jams: [], irregularities: [] }
-  }));
-
-  console.log(`✅ App initialisiert mit ${appState.categories.length} Kategorien`);
-
-  // User-Interaktion für Audio & Notifications
-  document.addEventListener('click', () => {
-    appState.userHasInteracted = true;
-    requestNotificationPermission();
-  }, { once: true });
-
-  // Buttons registrieren
-  document.getElementById('toggle-view')?.addEventListener('click', toggleView);
-  document.getElementById('test-alarm')?.addEventListener('click', triggerTestAlarm);
-
-  refreshData();
-  startCountdown();
-  setupManualRefresh();
-  setupTestAlarmButton();
-}
-
-// Countdown
-function startCountdown() {
-  if (appState.countdownInterval) clearInterval(appState.countdownInterval);
-
-  appState.countdown = 30;
-  const countdownEl = document.getElementById('countdown-timer');
-
-  appState.countdownInterval = setInterval(() => {
-    appState.countdown--;
-    if (appState.countdown <= 0) {
-      clearInterval(appState.countdownInterval);
-      refreshData();
-    } else if (countdownEl) {
-      countdownEl.textContent = `Nächste Aktualisierung in ${appState.countdown} Sekunden`;
-    }
-  }, 1000);
-}
-
-// Daten laden
+// ================================================
+// Haupt-Fetch-Funktion mit aggressivem No-Cache
+// ================================================
 export async function refreshData() {
   if (appState.isLoading) {
     console.log("⏳ refreshData() bereits aktiv – übersprungen");
@@ -381,16 +321,24 @@ export async function refreshData() {
   const statusEl = document.getElementById('status');
   if (statusEl) {
     statusEl.style.display = 'block';
-    statusEl.textContent = 'Daten werden aktualisiert...';
+    statusEl.textContent = 'Daten werden frisch vom Proxy geladen...';
   }
 
   try {
+    console.log("🔄 Starte Fetch von proxy.php mit no-store...");
+
     const res = await fetch(WAZE_URL, { 
-      cache: 'no-cache',
-      headers: { 'Cache-Control': 'no-cache' }
+      cache: 'no-store',                    // Browser-Cache komplett umgehen
+      headers: { 
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
     });
 
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    if (!res.ok) {
+      throw new Error(`HTTP ${res.status} – ${res.statusText}`);
+    }
 
     const data = await res.json();
 
@@ -398,6 +346,7 @@ export async function refreshData() {
     document.getElementById('last-updated').textContent = 
       `Aktueller Stand: ${new Date().toLocaleString('de-DE')} Uhr`;
 
+    // Kategorien zurücksetzen
     appState.categories.forEach(cat => {
       cat.items.alerts = [];
       cat.items.jams = [];
@@ -407,7 +356,7 @@ export async function refreshData() {
     const alerts = Array.isArray(data?.alerts) ? data.alerts : [];
     const jams = Array.isArray(data?.jams) ? data.jams : [];
 
-    console.log(`Geladen → Alerts: ${alerts.length}, Jams: ${jams.length}`);
+    console.log(`✅ Geladen → Alerts: ${alerts.length}, Jams: ${jams.length}`);
 
     const alertMarkers = [];
 
@@ -465,15 +414,34 @@ export async function refreshData() {
     renderUI(appState.categories);
 
   } catch (err) {
-    console.error("Daten-Ladefehler:", err);
+    console.error("❌ Daten-Ladefehler:", err);
     const statusEl = document.getElementById('status');
-    if (statusEl) statusEl.textContent = 'Fehler beim Laden der Daten';
+    if (statusEl) statusEl.textContent = `Fehler beim Laden: ${err.message}`;
   } finally {
     appState.isLoading = false;
     startCountdown();
   }
 }
 
+// Countdown
+function startCountdown() {
+  if (appState.countdownInterval) clearInterval(appState.countdownInterval);
+
+  appState.countdown = 30;
+  const countdownEl = document.getElementById('countdown-timer');
+
+  appState.countdownInterval = setInterval(() => {
+    appState.countdown--;
+    if (appState.countdown <= 0) {
+      clearInterval(appState.countdownInterval);
+      refreshData();
+    } else if (countdownEl) {
+      countdownEl.textContent = `Nächste Aktualisierung in ${appState.countdown} Sekunden`;
+    }
+  }, 1000);
+}
+
+// Button-Setup
 function setupManualRefresh() {
   const btn = document.getElementById('manual-refresh');
   if (!btn) return;
@@ -502,6 +470,51 @@ function setupTestAlarmButton() {
     testBtn.addEventListener('click', triggerTestAlarm);
     console.log("✅ Testalarm-Button erfolgreich registriert");
   }
+}
+
+// Initialisierung
+function initApp() {
+  injectAlarmStyles();
+
+  appState.alertClusterGroup = L.markerClusterGroup({
+    chunkedLoading: true,
+    showCoverageOnHover: false,
+    maxClusterRadius: 45,
+    spiderfyOnMaxZoom: true
+  });
+
+  appState.jamLayerGroup = L.layerGroup();
+  appState.irregularityLayerGroup = L.layerGroup();
+
+  appState.alertClusterGroup.addTo(appState.map);
+  appState.jamLayerGroup.addTo(appState.map);
+  appState.irregularityLayerGroup.addTo(appState.map);
+
+  appState.bigPolygonCoords = parseWKT(bigPolygonWKT);
+
+  appState.categories = rawCategories.map(cat => ({
+    name: cat.name,
+    coords: parseWKT(cat.wkt),
+    items: { alerts: [], jams: [], irregularities: [] },
+    notifications: cat.notifications || { alerts: [], jams: [], irregularities: [] }
+  }));
+
+  console.log(`✅ App initialisiert mit ${appState.categories.length} Kategorien`);
+
+  // User-Interaktion für Audio & Notifications
+  document.addEventListener('click', () => {
+    appState.userHasInteracted = true;
+    requestNotificationPermission();
+  }, { once: true });
+
+  // Buttons registrieren
+  document.getElementById('toggle-view')?.addEventListener('click', toggleView);
+  document.getElementById('test-alarm')?.addEventListener('click', triggerTestAlarm);
+
+  refreshData();
+  startCountdown();
+  setupManualRefresh();
+  setupTestAlarmButton();
 }
 
 // Start
