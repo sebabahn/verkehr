@@ -9,23 +9,23 @@
   <title>Verkehrsansicht</title>
 
   <!-- PWA Manifest & Theme -->
-<link rel="manifest" href="manifest.json">
+  <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#e74c3c">
-<link rel="apple-touch-icon" href="assets/web-app-manifest-192x192.png">
+  <link rel="apple-touch-icon" href="assets/web-app-manifest-192x192.png">
 
-<!-- Leaflet CSS zuerst -->
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous"/>
+  <!-- Leaflet CSS zuerst -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="anonymous" />
 
   <!-- MarkerCluster CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
 
   <!-- Eigenes CSS -->
-<link rel="stylesheet" href="css/design.css"/>
+  <link rel="stylesheet" href="css/design.css" />
   <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="shortcut icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
 </head>
 
 <body>
@@ -47,27 +47,31 @@
   <div id="map-container"></div>
 
   <!-- Skripte – WICHTIGE REIHENFOLGE -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@turf/turf@7/turf.min.js"></script>
 
-<script src="js/map.js"></script>
-<script type="module" src="js/data.js"></script>
-<script type="module" src="js/utils.js"></script>
-<script type="module" src="js/ui.js"></script>
-<script type="module" src="js/theme.js"></script>
-<script type="module" src="js/main.js"></script>
+  <script src="js/map.js"></script>
+  <script type="module" src="js/data.js"></script>
+  <script type="module" src="js/utils.js"></script>
+  <script type="module" src="js/ui.js"></script>
+  <script type="module" src="js/theme.js"></script>
+  <script type="module" src="js/main.js"></script>
 
   <!-- Service Worker Registration -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js')   <!-- Pfad korrigiert: sw.js im Root -->
+
+        // Pfad korrigiert: sw.js im Root
+        navigator.serviceWorker.register('sw.js')
           .then(reg => console.log('✅ Service Worker registriert', reg.scope))
           .catch(err => console.log('❌ Service Worker Registrierung fehlgeschlagen', err));
       });
     }
   </script>
 </body>
+
+</html>
 
 </html>
