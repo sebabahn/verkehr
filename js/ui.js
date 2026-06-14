@@ -1,12 +1,12 @@
 // ui.js – Bereinigte Version mit visueller Markierung für "Andere"
 
-"use strict";
-
 import {
   jamLevelsTrans,
   alertTypesTrans,
   alertSubtypesTrans,
-  irrTypesTrans
+  irrTypesTrans,
+  validatedCategories,
+  bigPolygonCoords
 } from './data.js';
 
 import {
@@ -17,48 +17,46 @@ import {
 // ================================================
 // Formatierungen
 // ================================================
+
+// === Optimierung 6: formatCategoryName mit Cache (Performance) ===
+const categoryIconCache = new Map();
+categoryIconCache.set('Andere', '<span style="color:#777;">Andere <small style="font-weight:normal;">(nicht zugeordnete Meldungen)</small></span>');
+
+function formatCategoryName(name) {
+  if (categoryIconCache.has(name)) return categoryIconCache.get(name);
+
+  const icons = {
+    'A3': './assets/AS.png',
+    'St 2312': './assets/B10.png',
+    'Stadtgebiet Stuttgart': './assets/S.png'
+  };
+
+  const icon = icons[name];
+  const result = icon
+    ? `<img src="${icon}" style="height:1.2em; vertical-align:middle; margin-right:5px;"> ${name}`
+    : name;
+
+  categoryIconCache.set(name, result);
+  return result;
+}
+
 function formatDate(millis) {
   if (!millis) return 'Keine Angabe';
   return new Date(millis).toLocaleString('de-DE') + ' Uhr';
 }
 
+// === Optimierung 7: getJamColorClass und getJamMapColor zusammengefasst ===
+const JAM_COLORS = {
+  classes: { 1: 'color-gold', 2: 'color-orange', 3: 'color-red', 4: 'color-darkred', 5: 'color-darkred' },
+  maps: { 1: '#f1c40f', 2: '#f39c12', 3: '#e74c3c', 4: '#c0392b', 5: '#8e0000' }
+};
+
 function getJamColorClass(level) {
-  switch (level) {
-    case 1: return 'color-gold';
-    case 2: return 'color-orange';
-    case 3: return 'color-red';
-    case 4: return 'color-darkred';
-    case 5: return 'color-darkred';
-    default: return 'color-gray';
-  }
+  return JAM_COLORS.classes[level] || 'color-gray';
 }
 
 function getJamMapColor(level) {
-  switch (level) {
-    case 1: return '#f1c40f';
-    case 2: return '#f39c12';
-    case 3: return '#e74c3c';
-    case 4: return '#c0392b';
-    case 5: return '#8e0000';
-    default: return '#95a5a6';
-  }
-}
-
-function formatCategoryName(name) {
-  let n = (name || '').trim();
-
-  if (n === 'Andere') {
-    return '<span style="color:#777;">Andere <small style="font-weight:normal;">(nicht zugeordnete Meldungen)</small></span>';
-  }
-
-  n = n.replace('A3', '<img src="./assets/AS.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> A3');
-  n = n.replace('St 2312', '<img src="./assets/B10.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> St 2312');
-
-  if (n === 'Stadtgebiet Stuttgart') {
-    n = '<img src="./assets/S.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> Stadtgebiet Stuttgart';
-  }
-
-  return n;
+  return JAM_COLORS.maps[level] || '#95a5a6';
 }
 
 // ================================================
@@ -141,31 +139,37 @@ function addZoomClickEvent(div, itemData) {
   };
 }
 
+// === Optimierung 5: checkPointInPolygon extrahiert (Code-Duplikat aufgelöst) ===
+function checkPointInPolygon(itemData, coords) {
+  if (itemData.location) {
+    return isPointInPolygonTurf([itemData.location.y, itemData.location.x], coords);
+  }
+  return isLineInPolygonTurf(itemData.line, coords);
+}
+
+// === Optimierung 2: shouldTriggerNotification ohne Array.isArray-Checks (validiertCategories verwendet) ===
+function shouldTriggerNotification(itemData, itemType, category) {
+  if (!category || !category.notifications) return false;
+
+  const notif = category.notifications;
+
+  if (itemType === 'alerts') return notif.alerts.includes(itemData.type);
+  if (itemType === 'jams') return notif.jams.includes(itemData.level);
+  if (itemType === 'irregularities') return notif.irregularities.includes(itemData.type);
+  return false;
+}
+
 // ================================================
 // Kategorisierung
 // ================================================
-function assignToCategory(itemData, itemType, categories, bigPolygonCoords) {
-  let isInBigPolygon = false;
-
-  if (itemType === 'alerts') {
-    const point = [itemData.location.y, itemData.location.x];
-    isInBigPolygon = isPointInPolygonTurf(point, bigPolygonCoords);
-  } else {
-    isInBigPolygon = isLineInPolygonTurf(itemData.line, bigPolygonCoords);
-  }
+function assignToCategory(itemData, itemType, categories) {
+  const isInBigPolygon = checkPointInPolygon(itemData, bigPolygonCoords);
 
   if (!isInBigPolygon && bigPolygonCoords.length > 0) return false;
 
   for (let i = 0; i < categories.length - 1; i++) {
     const cat = categories[i];
-    let isInside = false;
-
-    if (itemType === 'alerts') {
-      const point = [itemData.location.y, itemData.location.x];
-      isInside = isPointInPolygonTurf(point, cat.coords);
-    } else {
-      isInside = isLineInPolygonTurf(itemData.line, cat.coords);
-    }
+    const isInside = checkPointInPolygon(itemData, cat.coords);
 
     if (isInside) {
       cat.items[itemType].push(itemData);
@@ -178,25 +182,13 @@ function assignToCategory(itemData, itemType, categories, bigPolygonCoords) {
   return true;
 }
 
-// ================================================
-// Benachrichtigungs-Prüfung
-// ================================================
-function shouldTriggerNotification(itemData, itemType, category) {
-  if (!category || !category.notifications) return false;
-
-  const notif = category.notifications;
-
-  if (itemType === 'alerts') {
-    return Array.isArray(notif.alerts) && notif.alerts.includes(itemData.type);
-  }
-  if (itemType === 'jams') {
-    return Array.isArray(notif.jams) && notif.jams.includes(itemData.level);
-  }
-  if (itemType === 'irregularities') {
-    return Array.isArray(notif.irregularities) && notif.irregularities.includes(itemData.type);
-  }
-  return false;
-}
+// === Optimierung 8: sectionConfig als Konstante außerhalb renderUI ===
+const SECTION_CONFIG = {
+  'Meldungen': { open: true },
+  'Staus': { open: true },
+  'Sperrungen': { open: false },
+  'Verkehrsstörungen': { open: false }
+};
 
 // ================================================
 // Haupt-Render Funktion mit visueller Markierung für "Andere"
@@ -209,13 +201,6 @@ function renderUI(categories) {
   }
 
   const fragment = document.createDocumentFragment();
-
-  const sectionConfig = {
-    'Meldungen': { open: true },
-    'Staus': { open: true },
-    'Sperrungen': { open: false },
-    'Verkehrsstörungen': { open: false }
-  };
 
   let rendered = 0;
 
@@ -271,7 +256,7 @@ function renderUI(categories) {
       if (items.length === 0) return null;
 
       const det = document.createElement('details');
-      if (sectionConfig[sectionKey]?.open) det.setAttribute('open', '');
+      if (SECTION_CONFIG[sectionKey]?.open) det.setAttribute('open', '');
 
       const summaryHTML = sectionKey === 'Sperrungen' ? `<strong>${title}</strong>` : title;
       det.innerHTML = `<summary>${summaryHTML}</summary>`;
@@ -306,11 +291,11 @@ function renderUI(categories) {
     const stausDetail = createDetail(`Staus (${realJams.length})`, realJams, buildJamContent, 'Staus');
     if (stausDetail) section.appendChild(stausDetail);
 
-    const closures = [
-      ...cat.items.jams.filter(j => j.level === 5),
-      ...cat.items.irregularities.filter(i => i.level === 5 || i.type === "HUGE"),
-      ...cat.items.alerts.filter(a => a.type === 'ROAD_CLOSED')
-    ];
+    // === Optimierung 9: Closures-Array ohne mehrfaches Filtern ===
+    const closures = [];
+    cat.items.jams.forEach(j => { if (j.level === 5) closures.push(j); });
+    cat.items.irregularities.forEach(i => { if (i.level === 5 || i.type === "HUGE") closures.push(i); });
+    cat.items.alerts.forEach(a => { if (a.type === 'ROAD_CLOSED') closures.push(a); });
 
     const sperrungenDetail = createDetail(`Sperrungen (${closures.length})`, closures,
       (item) => item.level === 5 ? buildJamContent(item) :

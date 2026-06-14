@@ -1,7 +1,5 @@
 /// data.js – Präzise korrigiertes Bischbrunn-Polygon + garantierte "Andere"-Kategorie
 
-"use strict";
-
 export const WAZE_URL = 'proxy.php';
 
 export const bigPolygonWKT = "POLYGON((8.0 49.0,8.0 51.0,11.0 51.0,11.0 49.0,8.0 49.0))";
@@ -55,10 +53,29 @@ export const rawCategories = [
   // Die letzte Kategorie "Andere" wird automatisch in ui.js hinzugefügt
 ];
 
-console.log("✅ data.js geladen – Bischbrunn-Polygon stark verkleinert. 'Andere' wird jetzt immer angezeigt.");
+// === Optimierung 1: WKT-Koordinaten einmalig vorcomputieren (Performance) ===
+import { parseWKT } from './geometry.js';
 
+export const parsedCategories = rawCategories.map(cat => ({
+  ...cat,
+  coords: parseWKT(cat.wkt)
+}));
 
-// Ãœbersetzungs-Objekte
+export const bigPolygonCoords = parseWKT(bigPolygonWKT);
+
+// === Optimierung 2: Notifications einmalig validieren (keine Array.isArray-Checks zur Laufzeit) ===
+export const validatedCategories = parsedCategories.map(cat => ({
+  ...cat,
+  notifications: {
+    alerts: Array.isArray(cat.notifications.alerts) ? cat.notifications.alerts : [],
+    jams: Array.isArray(cat.notifications.jams) ? cat.notifications.jams : [],
+    irregularities: Array.isArray(cat.notifications.irregularities) ? cat.notifications.irregularities : []
+  }
+}));
+
+console.log("✅ data.js geladen – Bischbrunn-Polygon korrigiert für präzisere Zuordnung");
+
+// === Übersetzungs-Objekte ===
 export const jamLevelsTrans = {
   1: "Zähfließender Verkehr",
   2: "Mäßiger Stau",
@@ -116,9 +133,8 @@ export const alertSubtypesTrans = {
 export const irrTypesTrans = {
   "SMALL": "Kleine Verkehrsstörung",
   "MEDIUM": "Mittlere Verkehrsstörung",
-  "LARGE": "GroÃŸe Verkehrsstörung",
+  "LARGE": "Große Verkehrsstörung",
   "HUGE": "Außergewöhnliche Verkehrsstörung"
 };
-
 
 console.log("✅ data.js geladen – Bischbrunn-Polygon korrigiert für präzisere Zuordnung");

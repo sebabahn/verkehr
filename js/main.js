@@ -1,12 +1,10 @@
 // main.js – Komplette überarbeitete Version mit aggressivem No-Cache für proxy.php
 // Version: 2026-04-04 – optimiert für Workbox + striktes No-Cache-Verhalten
 
-"use strict";
-
 import {
   WAZE_URL,
-  bigPolygonWKT,
-  rawCategories
+  validatedCategories,
+  bigPolygonCoords
 } from './data.js';
 
 import {
@@ -19,17 +17,13 @@ import {
   shouldTriggerNotification
 } from './ui.js';
 
-import { parseWKT } from './geometry.js';
-
-import { alertTypesTrans } from './data.js';
-
 let appState = {
   map: null,
   alertClusterGroup: null,
   jamLayerGroup: null,
   irregularityLayerGroup: null,
-  categories: [],
-  bigPolygonCoords: [],
+  categories: JSON.parse(JSON.stringify(validatedCategories)), // Tiefe Kopie für Mutation
+  bigPolygonCoords: bigPolygonCoords,
   countdownInterval: null,
   countdown: 30,
   isLoading: false,
@@ -363,7 +357,7 @@ export async function refreshData() {
     alerts.forEach(alert => {
       if (!alert?.location?.x || !alert?.location?.y) return;
 
-      if (assignToCategory(alert, 'alerts', appState.categories, appState.bigPolygonCoords)) {
+      if (assignToCategory(alert, 'alerts', appState.categories)) {
         const icon = window.alertIcons?.[alert.type] ?? window.defaultAlertIcon;
         const marker = L.marker([alert.location.y, alert.location.x], { icon })
           .bindPopup(buildAlertContent(alert));
@@ -385,7 +379,7 @@ export async function refreshData() {
     jams.forEach(jam => {
       if (!Array.isArray(jam?.line) || jam.line.length < 2) return;
 
-      if (assignToCategory(jam, 'jams', appState.categories, appState.bigPolygonCoords)) {
+      if (assignToCategory(jam, 'jams', appState.categories)) {
         const latlngs = jam.line
           .filter(p => typeof p?.y === 'number' && typeof p?.x === 'number')
           .map(p => [p.y, p.x]);
@@ -490,14 +484,9 @@ function initApp() {
   appState.jamLayerGroup.addTo(appState.map);
   appState.irregularityLayerGroup.addTo(appState.map);
 
-  appState.bigPolygonCoords = parseWKT(bigPolygonWKT);
-
-  appState.categories = rawCategories.map(cat => ({
-    name: cat.name,
-    coords: parseWKT(cat.wkt),
-    items: { alerts: [], jams: [], irregularities: [] },
-    notifications: cat.notifications || { alerts: [], jams: [], irregularities: [] }
-  }));
+  // === Optimierung: Verwende validatedCategories direkt (bereits geparsed & validiert) ===
+  appState.bigPolygonCoords = bigPolygonCoords;
+  appState.categories = JSON.parse(JSON.stringify(validatedCategories));
 
   console.log(`✅ App initialisiert mit ${appState.categories.length} Kategorien`);
 
