@@ -327,9 +327,9 @@ export async function refreshData() {
   try {
     console.log("🔄 Starte Fetch von proxy.php mit no-store...");
 
-    const res = await fetch(WAZE_URL, { 
+    const res = await fetch(WAZE_URL, {
       cache: 'no-store',                    // Browser-Cache komplett umgehen
-      headers: { 
+      headers: {
         'Cache-Control': 'no-cache, no-store, must-revalidate',
         'Pragma': 'no-cache',
         'Expires': '0'
@@ -343,7 +343,7 @@ export async function refreshData() {
     const data = await res.json();
 
     if (statusEl) statusEl.style.display = 'none';
-    document.getElementById('last-updated').textContent = 
+    document.getElementById('last-updated').textContent =
       `Aktueller Stand: ${new Date().toLocaleString('de-DE')} Uhr`;
 
     // Kategorien zurücksetzen
