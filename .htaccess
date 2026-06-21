@@ -1,6 +1,15 @@
-# Datenkonfiguration immer frisch laden
+# Cache-Konfiguration für JavaScript-Dateien
+
+# data.js: 5 Minuten cache (300 Sekunden)
 <FilesMatch "^data\.js$">
-  Header set Cache-Control "no-cache, no-store, must-revalidate"
-  Header set Pragma "no-cache"
-  Header set Expires "0"
+  Header set Cache-Control "public, max-age=300, must-revalidate"
+  Header set Pragma "public"
+  Header set Expires "access plus 5 minutes"
 </FilesMatch>
+
+# Alle anderen JS‑Dateien: bis zu 24 Stunden cache, aber mit erzwungener Validierung
+<FilesMatch "\.js$">
+  Header set Cache-Control "public, max-age=86400, must-revalidate"
+  Header set Expires "access plus 24 hours"
+</FilesMatch>
+
