@@ -9,7 +9,10 @@ import {
   rawCategories
 } from './data.js';
 
-import { renderUI, assignToCategory, getJamMapColor, buildAlertContent, buildJamContent, buildIrregularityContent, shouldTriggerNotification } from './ui.js'; import { parseWKT } from './geometry.js'; import { alertTypesTrans } from './data.js'; import { throttle } from './utils.js';
+import { renderUI, assignToCategory, getJamMapColor, buildAlertContent, buildJamContent, buildIrregularityContent, shouldTriggerNotification } from './ui.js';
+import { parseWKT } from './geometry.js';
+import { alertTypesTrans } from './data.js';
+import { debounce } from './utils.js'; 
 
 let appState = {
   map: null,
@@ -500,8 +503,8 @@ function initApp() {
     requestNotificationPermission();
   }, { once: true });
 
-  // Zoom-basierte Aktualisierung mit 2s Grace-Periode
-  const zoomRefresh = throttle(() => {
+  // Zoom-basierte Aktualisierung mit 2s Debounce (Grace-Periode)
+  const onZoomEnd = () => {
     const currentZoom = appState.map.getZoom();
     if (appState.lastZoom !== null && currentZoom !== appState.lastZoom) {
       console.log(`🗺️ Zoom geändert (${appState.lastZoom} → ${currentZoom}) – lade Daten neu`);
@@ -510,9 +513,9 @@ function initApp() {
     } else {
       appState.lastZoom = currentZoom;
     }
-  }, 2000);
+  };
 
-  appState.map.on('zoomend', zoomRefresh);
+  appState.map.on('zoomend', debounce(onZoomEnd, 2000));
 
   // Buttons registrieren
   document.getElementById('toggle-view')?.addEventListener('click', toggleView);
