@@ -51,11 +51,11 @@ function formatCategoryName(name) {
     return '<span style="color:#777;">Andere <small style="font-weight:normal;">(nicht zugeordnete Meldungen)</small></span>';
   }
 
-  n = n.replace('A3', '<img src="./assets/AS.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> A3');
-  n = n.replace('St 2312', '<img src="./assets/B10.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> St 2312');
+  n = n.replace('A3', '<img src="./assets/AS.png" alt="A3" style="height:1.2em; vertical-align:middle; margin-right:5px;"> A3');
+  n = n.replace('St 2312', '<img src="./assets/B10.png" alt="St 2312" style="height:1.2em; vertical-align:middle; margin-right:5px;"> St 2312');
 
   if (n === 'Stadtgebiet Stuttgart') {
-    n = '<img src="./assets/S.png" style="height:1.2em; vertical-align:middle; margin-right:5px;"> Stadtgebiet Stuttgart';
+    n = '<img src="./assets/S.png" alt="Stadtgebiet Stuttgart" style="height:1.2em; vertical-align:middle; margin-right:5px;"> Stadtgebiet Stuttgart';
   }
 
   return n;
@@ -74,7 +74,7 @@ function buildAlertContent(d) {
   else if (d.type === 'ROAD_CLOSED') iconFile = '../assets/sperrung.png';
   else if (d.type === 'HAZARD') iconFile = '../assets/hazard.png';
 
-  const iconHtml = iconFile ? `<img src="${iconFile}" style="height:1.2em; margin-right:6px;">` : '';
+  const iconHtml = iconFile ? `<img src="${iconFile}" alt="${typeText}" style="height:1.2em; margin-right:6px;">` : '';
   const thumbsUp = (d.numberOfThumbsUp && d.numberOfThumbsUp > 0)
     ? `<span style="margin-left:8px; color:#e74c3c; font-weight:bold;">👍 ${d.numberOfThumbsUp}</span>`
     : '';
@@ -96,7 +96,7 @@ function buildJamContent(d) {
   const iconFile = d.level === 5 ? '../assets/sperrung.png' : '../assets/stau.png';
 
   return `
-    <div class="report-title"><img src="${iconFile}" style="height:1.2em; margin-right:6px;">${titleText}</div>
+    <div class="report-title"><img src="${iconFile}" alt="${titleText}" style="height:1.2em; margin-right:6px;">${titleText}</div>
     <div class="report-grid">
       <span>Ort:</span> <strong>${d.street || 'N/A'}, ${d.city || 'N/A'}</strong>
       <span>Zeitstempel:</span> <strong>${formatDate(d.pubMillis)}</strong>
@@ -256,7 +256,7 @@ function renderUI(categories) {
       summary.className = 'summary-section';
       summary.innerHTML = `
         <div class="summary-title">
-          <img src="../assets/stau.png" style="height:1.2em;"> Stauübersicht aktuell
+          <img src="../assets/stau.png" alt="Stau" style="height:1.2em;"> Stauübersicht aktuell
         </div>
         <div class="report-grid">
           <span>Gesamtlänge:</span> <strong>${totalLen} m</strong>

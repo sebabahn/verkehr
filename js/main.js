@@ -142,7 +142,7 @@ function showImportantPopup(item, itemType, categoryName) {
   popup.innerHTML = `
     <div class="popup-content">
       <div class="popup-header">
-        <img src="${icon}" style="height:28px; margin-right:10px;">
+        <img src="${icon}" alt="" style="height:28px; margin-right:10px;">
         <strong>${title}</strong>
         <button class="popup-close">×</button>
       </div>
