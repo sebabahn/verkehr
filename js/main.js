@@ -252,11 +252,14 @@ function triggerTestAlarm() {
 function toggleView() {
   appState.isMapExpanded = !appState.isMapExpanded;
   const body = document.body;
+  const mapContainer = document.getElementById('map-container');
 
   if (appState.isMapExpanded) {
+    mapContainer.classList.add('expanded');
     body.classList.add('map-expanded');
     showBackButton();
   } else {
+    mapContainer.classList.remove('expanded');
     body.classList.remove('map-expanded');
     hideBackButton();
   }
