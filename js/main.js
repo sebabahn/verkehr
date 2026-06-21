@@ -9,19 +9,7 @@ import {
   rawCategories
 } from './data.js';
 
-import {
-  renderUI,
-  assignToCategory,
-  getJamMapColor,
-  buildAlertContent,
-  buildJamContent,
-  buildIrregularityContent,
-  shouldTriggerNotification
-} from './ui.js';
-
-import { parseWKT } from './geometry.js';
-
-import { alertTypesTrans } from './data.js';
+import { renderUI, assignToCategory, getJamMapColor, buildAlertContent, buildJamContent, buildIrregularityContent, shouldTriggerNotification } from './ui.js'; import { parseWKT } from './geometry.js'; import { alertTypesTrans } from './data.js'; import { throttle } from './utils.js';
 
 let appState = {
   map: null,
@@ -37,7 +25,9 @@ let appState = {
   notifiedIds: new Set(),
   isAlarmPlaying: false,
   notificationPermission: 'default',
-  isMapExpanded: false
+  isMapExpanded: false,
+  lastZoom: null,
+  zoomRefreshTimeout: null
 };
 
 // Web Audio Context für 3x Piep
@@ -509,6 +499,20 @@ function initApp() {
     appState.userHasInteracted = true;
     requestNotificationPermission();
   }, { once: true });
+
+  // Zoom-basierte Aktualisierung mit 2s Grace-Periode
+  const zoomRefresh = throttle(() => {
+    const currentZoom = appState.map.getZoom();
+    if (appState.lastZoom !== null && currentZoom !== appState.lastZoom) {
+      console.log(`🗺️ Zoom geändert (${appState.lastZoom} → ${currentZoom}) – lade Daten neu`);
+      appState.lastZoom = currentZoom;
+      refreshData();
+    } else {
+      appState.lastZoom = currentZoom;
+    }
+  }, 2000);
+
+  appState.map.on('zoomend', zoomRefresh);
 
   // Buttons registrieren
   document.getElementById('toggle-view')?.addEventListener('click', toggleView);
