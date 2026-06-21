@@ -44,30 +44,6 @@ if (workbox) {
     })
   );
 
-  // Zusätzlicher manueller Fetch-Handler als Backup (für maximale Sicherheit)
-  self.addEventListener('fetch', event => {
-    const url = event.request.url;
-    if (url.includes('proxy.php') || url.endsWith('.php')) {
-      event.respondWith(
-        fetch(event.request, {
-          cache: 'no-store',
-          headers: {
-            'Cache-Control': 'no-cache, no-store, must-revalidate',
-            'Pragma': 'no-cache',
-            'Expires': '0'
-          }
-        }).catch(err => {
-          console.error('Proxy-Fetch fehlgeschlagen:', err);
-          return new Response(
-            JSON.stringify({ error: 'offline', message: 'Waze-Proxy nicht erreichbar' }),
-            { status: 503, headers: { 'Content-Type': 'application/json' } }
-          );
-        })
-      );
-      return; // Wichtig: nicht weiter an andere Routen weiterleiten
-    }
-  });
-
   // ================================================
   // 3. Alle anderen Anfragen → StaleWhileRevalidate
   // ================================================

@@ -18,3 +18,29 @@
   Header set Cache-Control "public, max-age=86400, must-revalidate"
   Header set Expires "access plus 24 hours"
 </FilesMatch>
+
+# CSS-Dateien: bis zu 24 Stunden cache
+<FilesMatch "\.css$">
+  Header set Cache-Control "public, max-age=86400, must-revalidate"
+  Header set Expires "access plus 24 hours"
+</FilesMatch>
+
+# manifest.json: 1 Stunde cache (ändert sich selten)
+<FilesMatch "^manifest\.json$">
+  Header set Cache-Control "public, max-age=3600, must-revalidate"
+  Header set Expires "access plus 1 hour"
+</FilesMatch>
+
+# index.html / HTML: NICHT cachen (wird vom SW precached)
+<FilesMatch "\.html?$">
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "0"
+</FilesMatch>
+
+# sw.js: NICHT cachen – SW-Updates müssen sofort ankommen!
+<FilesMatch "^sw\.js$">
+  Header set Cache-Control "no-cache, no-store, must-revalidate"
+  Header set Pragma "no-cache"
+  Header set Expires "0"
+</FilesMatch>
