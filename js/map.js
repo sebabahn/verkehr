@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', function initMap() {
     };
 
     const icons = {
-        'JAM': L.icon({ iconUrl: 'assets/stau.png', ...iconConfig }),
-        'HAZARD': L.icon({ iconUrl: 'assets/hazard.png', ...iconConfig }),
-        'ACCIDENT': L.icon({ iconUrl: 'assets/accident.png', ...iconConfig }),
-        'ROAD_CLOSED': L.icon({ iconUrl: 'assets/sperrung.png', ...iconConfig })
+        'JAM': L.icon({ iconUrl: '../assets/stau.png', ...iconConfig }),
+        'HAZARD': L.icon({ iconUrl: '../assets/hazard.png', ...iconConfig }),
+        'ACCIDENT': L.icon({ iconUrl: '../assets/accident.png', ...iconConfig }),
+        'ROAD_CLOSED': L.icon({ iconUrl: '../assets/sperrung.png', ...iconConfig })
     };
 
     const defaultAlertIcon = L.icon({
