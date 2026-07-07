@@ -1,0 +1,1548 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<rss xmlns:georss="http://www.georss.org/georss" xmlns:linqmap="http://www.linqmap.com" version="2.0">
+<channel>
+<title>GeoRSS</title>
+<description>GeoRSS</description>
+<georss:box>49.750355 9.257025 50.056393 9.711584</georss:box>
+<linqmap:time>Tue Jul 7 10:03:16 +0000 2026,Tue Jul 7 11:03:16 +0000 2026</linqmap:time>
+<item>
+<title>alert</title>
+<pubDate>Sun Oct 12 10:02:58 +0000 2025</pubDate>
+<georss:point>49.844601 9.612045</georss:point>
+<linqmap:uuid>127a1528-2b9d-4317-b5e3-df74a1fa7d88</linqmap:uuid>
+<linqmap:magvar>101</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>Ludwigstraße</linqmap:street>
+<linqmap:city>Marktheidenfeld</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>1</linqmap:roadType>
+<linqmap:reportRating>5</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>7</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.844601</latitude>
+<longitude>9.612045</longitude>
+<distance_m>68</distance_m>
+<bearing_deg>101</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.84448</latitude>
+<longitude>9.612971</longitude>
+<bearing_deg>101</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 09:29:39 +0000 2026</pubDate>
+<georss:point>49.902331 9.382222</georss:point>
+<linqmap:uuid>621ce323-faba-4e9d-bd53-d1e0fdcdcaf5</linqmap:uuid>
+<linqmap:magvar>113</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>A3 > Nürnberg / Würzburg</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>4</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>1</confidence>
+<linqmap:reliability>8</linqmap:reliability>
+<linqmap:reportDescription>A3 Frankfurt Richtung Würzburg zwischen Rohrbrunn und Marktheidenfeld rechter Fahrstreifen gesperrt, mittlerer Fahrstreifen gesperrt, Bergungsarbeiten</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>49.901923</latitude>
+<longitude>9.380457</longitude>
+<distance_m>185</distance_m>
+<bearing_deg>9</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.902289</latitude>
+<longitude>9.382374</longitude>
+<bearing_deg>113</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.008834 9.414395</georss:point>
+<linqmap:uuid>88640809-bf67-4706-9ad0-25cfd5809cd8</linqmap:uuid>
+<linqmap:magvar>312</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.008937</latitude>
+<longitude>9.413454</longitude>
+<distance_m>70</distance_m>
+<bearing_deg>102</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.008834</latitude>
+<longitude>9.414395</longitude>
+<bearing_deg>132</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.003124 9.420147</georss:point>
+<linqmap:uuid>09c1973b-70a0-496d-86ec-003a737a340c</linqmap:uuid>
+<linqmap:magvar>117</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002892</latitude>
+<longitude>9.420858</longitude>
+<distance_m>57</distance_m>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.003124</latitude>
+<longitude>9.420147</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.002682 9.421497</georss:point>
+<linqmap:uuid>df170aee-07e2-41b2-85a6-d351c6df5e2e</linqmap:uuid>
+<linqmap:magvar>297</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002682</latitude>
+<longitude>9.421497</longitude>
+<distance_m>51</distance_m>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.002892</latitude>
+<longitude>9.420858</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.009166 9.413123</georss:point>
+<linqmap:uuid>ee1101f0-d2d0-40af-971d-7e5398aca222</linqmap:uuid>
+<linqmap:magvar>156</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.009166</latitude>
+<longitude>9.413123</longitude>
+<distance_m>37</distance_m>
+<bearing_deg>156</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.008937</latitude>
+<longitude>9.413454</longitude>
+<bearing_deg>102</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.004567 9.417732</georss:point>
+<linqmap:uuid>b202a84e-e488-4c72-9be8-48b7813739c5</linqmap:uuid>
+<linqmap:magvar>317</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.008834</latitude>
+<longitude>9.414395</longitude>
+<distance_m>537</distance_m>
+<bearing_deg>147</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.004567</latitude>
+<longitude>9.417732</longitude>
+<bearing_deg>137</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.002892 9.420858</georss:point>
+<linqmap:uuid>dbfec321-0f44-4612-b2c4-1c7d5c74f453</linqmap:uuid>
+<linqmap:magvar>297</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002892</latitude>
+<longitude>9.420858</longitude>
+<distance_m>57</distance_m>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.003124</latitude>
+<longitude>9.420147</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.002892 9.420858</georss:point>
+<linqmap:uuid>21334d73-f9cc-4ebd-8b5c-4ee8dfcadd73</linqmap:uuid>
+<linqmap:magvar>117</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002682</latitude>
+<longitude>9.421497</longitude>
+<distance_m>51</distance_m>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.002892</latitude>
+<longitude>9.420858</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.004567 9.417732</georss:point>
+<linqmap:uuid>b6bf0bf2-7f8f-4b66-8a80-c1e7aebd758b</linqmap:uuid>
+<linqmap:magvar>138</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.003124</latitude>
+<longitude>9.420147</longitude>
+<distance_m>238</distance_m>
+<bearing_deg>300</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.004567</latitude>
+<longitude>9.417732</longitude>
+<bearing_deg>318</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.008834 9.414395</georss:point>
+<linqmap:uuid>822292ba-e449-46c5-85ea-b56d96f17881</linqmap:uuid>
+<linqmap:magvar>146</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.008834</latitude>
+<longitude>9.414395</longitude>
+<distance_m>537</distance_m>
+<bearing_deg>147</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.004567</latitude>
+<longitude>9.417732</longitude>
+<bearing_deg>137</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.008937 9.413454</georss:point>
+<linqmap:uuid>99dbee0c-9f9a-44b1-97d9-ce87a02b2681</linqmap:uuid>
+<linqmap:magvar>102</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.008937</latitude>
+<longitude>9.413454</longitude>
+<distance_m>70</distance_m>
+<bearing_deg>102</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.008834</latitude>
+<longitude>9.414395</longitude>
+<bearing_deg>132</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Feb 17 14:48:58 +0000 2026</pubDate>
+<georss:point>50.002682 9.421497</georss:point>
+<linqmap:uuid>2a3152c3-9905-48f2-9bfb-b33a170a75ed</linqmap:uuid>
+<linqmap:magvar>117</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002172</latitude>
+<longitude>9.422302</longitude>
+<distance_m>83</distance_m>
+<bearing_deg>310</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.002682</latitude>
+<longitude>9.421497</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.003124 9.420147</georss:point>
+<linqmap:uuid>cac69a48-5ed8-4dd9-a4e5-71f32ea5bafc</linqmap:uuid>
+<linqmap:magvar>300</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.003124</latitude>
+<longitude>9.420147</longitude>
+<distance_m>238</distance_m>
+<bearing_deg>300</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.004567</latitude>
+<longitude>9.417732</longitude>
+<bearing_deg>318</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.002172 9.422302</georss:point>
+<linqmap:uuid>95a41622-eea6-43b3-b0ba-9197f6db6878</linqmap:uuid>
+<linqmap:magvar>309</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.002172</latitude>
+<longitude>9.422302</longitude>
+<distance_m>83</distance_m>
+<bearing_deg>310</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.002682</latitude>
+<longitude>9.421497</longitude>
+<bearing_deg>297</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Thu Feb 26 08:21:18 +0000 2026</pubDate>
+<georss:point>50.008937 9.413454</georss:point>
+<linqmap:uuid>f0fd41c9-3699-421c-9b59-2819df347709</linqmap:uuid>
+<linqmap:magvar>282</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>2</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>MSP21, St2317 zwischen Neuhütten und Abzweig nach Hain im Spessart gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.009166</latitude>
+<longitude>9.413123</longitude>
+<distance_m>37</distance_m>
+<bearing_deg>156</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.008937</latitude>
+<longitude>9.413454</longitude>
+<bearing_deg>102</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jul 6 17:50:42 +0000 2026</pubDate>
+<georss:point>49.895327 9.629244</georss:point>
+<linqmap:uuid>2f4f83de-73bf-4097-866a-bbcc4940af71</linqmap:uuid>
+<linqmap:magvar>258</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_CONSTRUCTION</linqmap:subtype>
+<linqmap:street>St2438 - Hauptstraße</linqmap:street>
+<linqmap:city>Roden</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>3</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.895314</latitude>
+<longitude>9.629129</longitude>
+<distance_m>83</distance_m>
+<bearing_deg>80</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.895446</latitude>
+<longitude>9.630276</longitude>
+<bearing_deg>80</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jun 15 16:00:00 +0000 2026</pubDate>
+<georss:point>49.866879 9.603653</georss:point>
+<linqmap:uuid>b17cac38-217a-4b51-8489-c86ed894cff7</linqmap:uuid>
+<linqmap:magvar>6</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>St2315 - Marktheidenfelder Straße</linqmap:street>
+<linqmap:city>Hafenlohr</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>5</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<linqmap:reportDescription>St2315 Hafenlohr, Marktheidenfelder Straße bis Hauptstraße zwischen Ortseingang und Windheimer Straße Fahrbahnverengung, Baustelle, bis 31.12.2027 18:00 Uhr</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>49.863086</latitude>
+<longitude>9.601591</longitude>
+<distance_m>505</distance_m>
+<bearing_deg>32</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.867282</latitude>
+<longitude>9.603719</longitude>
+<bearing_deg>6</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jun 15 16:00:00 +0000 2026</pubDate>
+<georss:point>49.866879 9.603653</georss:point>
+<linqmap:uuid>9c0a0249-0f12-423e-802b-3735d9fa86b8</linqmap:uuid>
+<linqmap:magvar>6</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>St2315 - Marktheidenfelder Straße</linqmap:street>
+<linqmap:city>Hafenlohr</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>5</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<linqmap:reportDescription>St2315 Hafenlohr, Marktheidenfelder Straße bis Hauptstraße zwischen Ortseingang und Windheimer Straße Fahrbahnverengung, Baustelle, bis 31.12.2027 18:00 Uhr</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>49.863086</latitude>
+<longitude>9.601591</longitude>
+<distance_m>505</distance_m>
+<bearing_deg>32</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.867282</latitude>
+<longitude>9.603719</longitude>
+<bearing_deg>6</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jun 15 16:00:00 +0000 2026</pubDate>
+<georss:point>49.868919 9.603717</georss:point>
+<linqmap:uuid>89b0bf94-197d-485c-93ba-fa57d4079e34</linqmap:uuid>
+<linqmap:magvar>190</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>St2315 - Hauptstraße</linqmap:street>
+<linqmap:city>Hafenlohr</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>5</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<linqmap:reportDescription>St2315 Hafenlohr, Hauptstraße bis Marktheidenfelder Straße zwischen Windheimer Straße und Ortsausgang Fahrbahnverengung, Baustelle, bis 31.12.2027 18:00 Uhr</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>49.868919</latitude>
+<longitude>9.603717</longitude>
+<distance_m>94</distance_m>
+<bearing_deg>10</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.869746</latitude>
+<longitude>9.603926</longitude>
+<bearing_deg>359</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jun 15 16:00:00 +0000 2026</pubDate>
+<georss:point>49.868919 9.603717</georss:point>
+<linqmap:uuid>451156a9-4784-4a0a-b0b9-c2d0688ecd0e</linqmap:uuid>
+<linqmap:magvar>190</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>St2315 - Hauptstraße</linqmap:street>
+<linqmap:city>Hafenlohr</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>5</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<linqmap:reportDescription>St2315 Hafenlohr, Hauptstraße bis Marktheidenfelder Straße zwischen Windheimer Straße und Ortsausgang Fahrbahnverengung, Baustelle, bis 31.12.2027 18:00 Uhr</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>49.868919</latitude>
+<longitude>9.603717</longitude>
+<distance_m>94</distance_m>
+<bearing_deg>10</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.869746</latitude>
+<longitude>9.603926</longitude>
+<bearing_deg>359</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Oct 28 06:30:00 +0000 2024</pubDate>
+<georss:point>50.009172 9.413074</georss:point>
+<linqmap:uuid>35bcfa51-3a92-4cb6-910a-73e3a61fcee4</linqmap:uuid>
+<linqmap:magvar>101</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>St2317</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>5</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<linqmap:reportDescription>St2317, MSP21 zwischen Abzweig nach Hain im Spessart und Neuhütten gesperrt, Baustelle, bis 31.12.2027 15:00 Uhr, empfohlene Umleitung: über St 2317 - Heigenbrücken - Siebenwege - B 26 - Bischbornerhof und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.012108</latitude>
+<longitude>9.395007</longitude>
+<distance_m>1378</distance_m>
+<bearing_deg>143</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.009166</latitude>
+<longitude>9.413123</longitude>
+<bearing_deg>101</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Sun Jun 7 18:00:16 +0000 2026</pubDate>
+<georss:point>50.022009 9.45497</georss:point>
+<linqmap:uuid>da5cabc5-390f-4bf5-936a-0b7e012cc8fa</linqmap:uuid>
+<linqmap:magvar>168</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Abzweig nach Frammersbach und Krommenthal gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.022009</latitude>
+<longitude>9.45497</longitude>
+<distance_m>43</distance_m>
+<bearing_deg>168</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.021628</latitude>
+<longitude>9.4551</longitude>
+<bearing_deg>168</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Sun Jun 7 18:00:14 +0000 2026</pubDate>
+<georss:point>50.022843 9.454571</georss:point>
+<linqmap:uuid>7b3f42fe-2c27-4dd2-9e45-1846b6c68b49</linqmap:uuid>
+<linqmap:magvar>162</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Abzweig nach Frammersbach und Krommenthal gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.022843</latitude>
+<longitude>9.454571</longitude>
+<distance_m>97</distance_m>
+<bearing_deg>162</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.022009</latitude>
+<longitude>9.45497</longitude>
+<bearing_deg>164</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Sun Jun 7 18:00:18 +0000 2026</pubDate>
+<georss:point>50.019804 9.453464</georss:point>
+<linqmap:uuid>b4b2a70c-5b73-47a9-994e-f243ccd0430b</linqmap:uuid>
+<linqmap:magvar>46</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Krommenthal und Abzweig nach Frammersbach gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.019804</latitude>
+<longitude>9.453464</longitude>
+<distance_m>251</distance_m>
+<bearing_deg>46</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.021628</latitude>
+<longitude>9.4551</longitude>
+<bearing_deg>357</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Sun Jun 7 18:00:14 +0000 2026</pubDate>
+<georss:point>50.021628 9.4551</georss:point>
+<linqmap:uuid>87c023c4-7c2a-4723-a547-391e1e71300d</linqmap:uuid>
+<linqmap:magvar>348</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Krommenthal und Abzweig nach Frammersbach gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.022009</latitude>
+<longitude>9.45497</longitude>
+<distance_m>43</distance_m>
+<bearing_deg>168</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.021628</latitude>
+<longitude>9.4551</longitude>
+<bearing_deg>168</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Mon Jun 8 05:31:30 +0000 2026</pubDate>
+<georss:point>50.021628 9.4551</georss:point>
+<linqmap:uuid>75f440b1-37e0-4940-892f-495947cc3b2a</linqmap:uuid>
+<linqmap:magvar>177</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Abzweig nach Frammersbach und Krommenthal gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.019804</latitude>
+<longitude>9.453464</longitude>
+<distance_m>251</distance_m>
+<bearing_deg>46</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.021628</latitude>
+<longitude>9.4551</longitude>
+<bearing_deg>357</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Sun Jun 7 18:00:18 +0000 2026</pubDate>
+<georss:point>50.022009 9.45497</georss:point>
+<linqmap:uuid>b58b2a5d-402b-44c3-a5c4-ae016dc433c2</linqmap:uuid>
+<linqmap:magvar>344</linqmap:magvar>
+<linqmap:type>ROAD_CLOSED</linqmap:type>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>7</linqmap:roadType>
+<linqmap:reportRating>0</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<linqmap:reportDescription>St2317 zwischen Krommenthal und Abzweig nach Frammersbach gesperrt, Fahrbahnerneuerung, von 08.06.2026 07:30 Uhr bis 10.12.2027 15:00 Uhr, empfohlene Umleitung: über Wiesthal - Habichsthal - Frammersbach - B276 - Partenstein und umgekehrt.</linqmap:reportDescription>
+<openlrinfo>
+<reference_point>
+<latitude>50.022843</latitude>
+<longitude>9.454571</longitude>
+<distance_m>97</distance_m>
+<bearing_deg>162</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>50.022009</latitude>
+<longitude>9.45497</longitude>
+<bearing_deg>164</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:51:43 +0000 2026</pubDate>
+<georss:point>49.889109 9.413247</georss:point>
+<linqmap:uuid>ee79972e-5645-4edd-9b0e-e3d5ca92b390</linqmap:uuid>
+<linqmap:magvar>127</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_STAND_STILL_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>3</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.892579</latitude>
+<longitude>9.400037</longitude>
+<distance_m>10314</distance_m>
+<bearing_deg>120</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.839275</latitude>
+<longitude>9.511173</longitude>
+<bearing_deg>135</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:32:18 +0000 2026</pubDate>
+<georss:point>49.876194 9.443368</georss:point>
+<linqmap:uuid>f63c480f-87f1-4e3f-80fc-979903d491d3</linqmap:uuid>
+<linqmap:magvar>313</linqmap:magvar>
+<linqmap:type>ACCIDENT</linqmap:type>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>1</linqmap:reportRating>
+<confidence>4</confidence>
+<linqmap:reliability>10</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.838778</latitude>
+<longitude>9.512367</longitude>
+<distance_m>10590</distance_m>
+<bearing_deg>315</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.893644</latitude>
+<longitude>9.398249</longitude>
+<bearing_deg>310</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 11:03:13 +0000 2026</pubDate>
+<georss:point>49.878779 9.438304</georss:point>
+<linqmap:uuid>ebff972c-a75b-4b59-b65d-52a9919b3af8</linqmap:uuid>
+<linqmap:magvar>121</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>2</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.892579</latitude>
+<longitude>9.400037</longitude>
+<distance_m>10314</distance_m>
+<bearing_deg>120</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.839275</latitude>
+<longitude>9.511173</longitude>
+<bearing_deg>135</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:40:43 +0000 2026</pubDate>
+<georss:point>49.916445 9.360603</georss:point>
+<linqmap:uuid>3234f033-f97c-4c92-9ded-e43137eefc3b</linqmap:uuid>
+<linqmap:magvar>134</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_HEAVY_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>1</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.903958</latitude>
+<longitude>9.377562</longitude>
+<distance_m>1876</distance_m>
+<bearing_deg>304</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.916563</latitude>
+<longitude>9.360417</longitude>
+<bearing_deg>316</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:46:54 +0000 2026</pubDate>
+<georss:point>49.892653 9.39988</georss:point>
+<linqmap:uuid>54f632c1-fe09-42c5-8bce-4906ff361fb4</linqmap:uuid>
+<linqmap:magvar>125</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_HEAVY_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>2</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.892579</latitude>
+<longitude>9.400037</longitude>
+<distance_m>1315</distance_m>
+<bearing_deg>305</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.90073</latitude>
+<longitude>9.386997</longitude>
+<bearing_deg>302</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:58:59 +0000 2026</pubDate>
+<georss:point>49.922118 9.355246</georss:point>
+<linqmap:uuid>ec15c14e-81f0-46fd-ada0-3dfb477f175f</linqmap:uuid>
+<linqmap:magvar>163</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_HEAVY_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>4</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+<openlrinfo>
+<reference_point>
+<latitude>49.917876</latitude>
+<longitude>9.35864</longitude>
+<distance_m>2035</distance_m>
+<bearing_deg>325</bearing_deg>
+</reference_point>
+<reference_point>
+<latitude>49.934617</latitude>
+<longitude>9.348247</longitude>
+<bearing_deg>327</bearing_deg>
+</reference_point>
+</openlrinfo>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Mon Jul 6 02:31:31 +0000 2026</pubDate>
+<linqmap:id>637328504</linqmap:id>
+<linqmap:uuid>637328504</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>538</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.004567 9.417732 50.004913 9.41723 50.00517 9.416894 50.005451 9.416614 50.005702 9.416411 50.00687 9.415647 50.007497 9.415077 50.0077 9.414913 50.007891 9.414804 50.008604 9.414534 50.00879 9.41444 50.008834 9.414395</georss:line>
+<linqmap:endNode>St2317 - Spatgrube</linqmap:endNode>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Fri Jun 26 02:15:28 +0000 2026</pubDate>
+<linqmap:id>1097383276</linqmap:id>
+<linqmap:uuid>1097383276</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>37</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.009166 9.413123 50.00902 9.413226 50.008946 9.413387 50.008937 9.413454</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jun 23 02:15:54 +0000 2026</pubDate>
+<linqmap:id>635559780</linqmap:id>
+<linqmap:uuid>635559780</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>43</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.022009 9.45497 50.021628 9.4551</georss:line>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Mon Jun 22 02:21:40 +0000 2026</pubDate>
+<linqmap:id>771483452</linqmap:id>
+<linqmap:uuid>771483452</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>83</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.002172 9.422302 50.002243 9.422169 50.002433 9.421992 50.002536 9.421857 50.002616 9.421702 50.002682 9.421497</georss:line>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 10:44:51 +0000 2026</pubDate>
+<linqmap:id>550431554</linqmap:id>
+<linqmap:uuid>550431554</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>97</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.022009 9.45497 50.022409 9.454795 50.022843 9.454571</georss:line>
+<linqmap:endNode>St2317</linqmap:endNode>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Fri Jun 19 02:16:26 +0000 2026</pubDate>
+<linqmap:id>99281638</linqmap:id>
+<linqmap:uuid>99281638</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>538</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.008834 9.414395 50.00879 9.41444 50.008604 9.414534 50.007891 9.414804 50.0077 9.414913 50.007497 9.415077 50.00687 9.415647 50.005702 9.416411 50.005451 9.416614 50.00517 9.416894 50.004913 9.41723 50.004567 9.417732</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jun 30 02:16:37 +0000 2026</pubDate>
+<linqmap:id>1875325770</linqmap:id>
+<linqmap:uuid>1875325770</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>251</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.019804 9.453464 50.019833 9.453511 50.019975 9.453608 50.020358 9.453672 50.020455 9.453711 50.020585 9.453842 50.020673 9.454004 50.020955 9.454681 50.02106 9.454872 50.021145 9.454976 50.021221 9.455037 50.021371 9.455094 50.021492 9.45511 50.021628 9.4551</georss:line>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Thu Jul 2 11:22:14 +0000 2026</pubDate>
+<linqmap:id>99525438</linqmap:id>
+<linqmap:uuid>99525438</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>238</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.003124 9.420147 50.003317 9.419617 50.003509 9.419237 50.003731 9.418891 50.004567 9.417732</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jun 23 02:15:54 +0000 2026</pubDate>
+<linqmap:id>635556848</linqmap:id>
+<linqmap:uuid>635556848</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>37</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.008937 9.413454 50.008946 9.413387 50.00902 9.413226 50.009166 9.413123</georss:line>
+<linqmap:endNode>St2317 - Spatgrube</linqmap:endNode>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Wed Jul 1 04:21:18 +0000 2026</pubDate>
+<linqmap:id>1767529352</linqmap:id>
+<linqmap:uuid>1767529352</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>97</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.022843 9.454571 50.022409 9.454795 50.022009 9.45497</georss:line>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Mon Jun 29 02:16:22 +0000 2026</pubDate>
+<linqmap:id>1743752828</linqmap:id>
+<linqmap:uuid>1743752828</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>51</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.002892 9.420858 50.002682 9.421497</georss:line>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Wed Jun 24 02:16:44 +0000 2026</pubDate>
+<linqmap:id>790216972</linqmap:id>
+<linqmap:uuid>790216972</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>57</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.003124 9.420147 50.002892 9.420858</georss:line>
+<linqmap:endNode>MSP21 - Steingrundstraße</linqmap:endNode>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 10:46:28 +0000 2026</pubDate>
+<linqmap:id>550611908</linqmap:id>
+<linqmap:uuid>550611908</linqmap:uuid>
+<linqmap:speed>3.388888888888889</linqmap:speed>
+<linqmap:level>4</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>12.2</linqmap:speedKMH>
+<linqmap:length>8328</linqmap:length>
+<linqmap:delay>3060</linqmap:delay>
+<georss:line>49.917876 9.35864 49.917636 9.358942 49.916919 9.359891 49.916563 9.360417 49.915904 9.36139 49.915364 9.362295 49.914251 9.364066 49.91384 9.364673 49.913103 9.365711 49.912867 9.366026 49.911646 9.367515 49.911318 9.367887 49.910485 9.368755 49.908241 9.370969 49.907567 9.371684 49.907051 9.372258 49.906728 9.372654 49.906276 9.373265 49.906003 9.37367 49.905508 9.374467 49.905131 9.375101 49.90487 9.375581 49.904375 9.376592 49.903958 9.377562 49.903544 9.37863 49.903114 9.379873 49.902289 9.382374 49.902015 9.383313 49.901374 9.385251 49.901021 9.386245 49.90073 9.386997 49.900304 9.388058 49.899767 9.389266 49.899365 9.390089 49.898962 9.390853 49.898634 9.391454 49.898376 9.391899 49.897957 9.392563 49.89743 9.393324 49.897031 9.393814 49.89565 9.395301 49.895039 9.395942 49.894659 9.39639 49.894212 9.396961 49.893639 9.397835 49.893402 9.398269 49.893106 9.398869 49.892579 9.400037 49.892414 9.400482 49.892104 9.401445 49.891876 9.402269 49.891687 9.403169 49.891546 9.403993 49.891217 9.406135 49.890887 9.40806 49.890469 9.409798 49.890123 9.410914 49.889691 9.412062 49.888991 9.413489 49.888336 9.41461 49.887399 9.416108 49.886539 9.41744 49.885839 9.418431 49.884824 9.419936 49.884461 9.420531 49.883763 9.421819 49.883438 9.422473 49.882951 9.423567 49.882643 9.424318 49.882384 9.425027 49.882045 9.426073 49.881755 9.427033 49.881316 9.428766 49.880524 9.432445 49.880189 9.433905 49.879905 9.435053 49.879428 9.436635 49.878834 9.438191 49.878592 9.438786 49.878149 9.439741 49.877174 9.441415 49.876825 9.442037 49.87639 9.442702 49.875384 9.444177 49.874952 9.444751 49.874661 9.445186 49.872778 9.447676</georss:line>
+<linqmap:endNode>Marktheidenfeld</linqmap:endNode>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:city>Weibersbrunn</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>3</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 10:58:11 +0000 2026</pubDate>
+<linqmap:id>552145456</linqmap:id>
+<linqmap:uuid>552145456</linqmap:uuid>
+<linqmap:speed>17.31388888888889</linqmap:speed>
+<linqmap:level>1</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>62.33</linqmap:speedKMH>
+<linqmap:length>2891</linqmap:length>
+<linqmap:delay>75</linqmap:delay>
+<georss:line>49.795277 9.621158 49.794775 9.620743 49.793694 9.61972 49.79294 9.618996 49.79192 9.618011 49.791645 9.617717 49.791191 9.617183 49.790591 9.616393 49.788233 9.612629 49.787266 9.610593 49.786889 9.609568 49.786259 9.607293 49.785877 9.605617 49.785375 9.60302 49.784325 9.596383 49.783318 9.590625 49.782958 9.588336 49.782907 9.587968</georss:line>
+<linqmap:endNode>L617</linqmap:endNode>
+<linqmap:street>St2299</linqmap:street>
+<linqmap:city>Triefenstein</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Wed Jun 24 03:08:25 +0000 2026</pubDate>
+<linqmap:id>791885420</linqmap:id>
+<linqmap:uuid>791885420</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>68</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>49.844601 9.612045 49.84448 9.612971</georss:line>
+<linqmap:endNode>Äußerer Ring</linqmap:endNode>
+<linqmap:street>Ludwigstraße</linqmap:street>
+<linqmap:city>Marktheidenfeld</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>1</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Wed Jun 24 03:08:25 +0000 2026</pubDate>
+<linqmap:id>791889360</linqmap:id>
+<linqmap:uuid>791889360</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>51</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.002682 9.421497 50.002892 9.420858</georss:line>
+<linqmap:endNode>MSP21 - Breidensteiner Straße</linqmap:endNode>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 02:19:19 +0000 2026</pubDate>
+<linqmap:id>778536642</linqmap:id>
+<linqmap:uuid>778536642</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>70</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.008937 9.413454 50.008911 9.41365 50.008909 9.414119 50.008899 9.414222 50.008874 9.414325 50.008834 9.414395</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Fri Jun 26 02:15:27 +0000 2026</pubDate>
+<linqmap:id>1097367938</linqmap:id>
+<linqmap:uuid>1097367938</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>43</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.021628 9.4551 50.022009 9.45497</georss:line>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Mon Jun 22 02:21:39 +0000 2026</pubDate>
+<linqmap:id>771452944</linqmap:id>
+<linqmap:uuid>771452944</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>57</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.002892 9.420858 50.003124 9.420147</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 02:19:18 +0000 2026</pubDate>
+<linqmap:id>778571224</linqmap:id>
+<linqmap:uuid>778571224</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>70</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.008834 9.414395 50.008874 9.414325 50.008899 9.414222 50.008909 9.414119 50.008911 9.41365 50.008937 9.413454</georss:line>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Tue Jul 7 10:48:02 +0000 2026</pubDate>
+<linqmap:id>550769572</linqmap:id>
+<linqmap:uuid>550769572</linqmap:uuid>
+<linqmap:speed>3.852777777777778</linqmap:speed>
+<linqmap:level>4</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>13.87</linqmap:speedKMH>
+<linqmap:length>1152</linqmap:length>
+<linqmap:delay>244</linqmap:delay>
+<georss:line>49.855953 9.57444 49.855801 9.574725 49.85553 9.575179 49.855398 9.575433 49.855244 9.575776 49.854968 9.576641 49.854488 9.578376 49.853812 9.580935 49.85371 9.581363 49.853602 9.581923 49.853524 9.582464 49.853455 9.583107 49.853345 9.584282 49.85326 9.584819 49.853174 9.585233 49.853017 9.585778 49.85296 9.585938 49.852407 9.587489 49.852322 9.587823 49.852255 9.588173 49.852186 9.58879 49.852179 9.589138</georss:line>
+<linqmap:endNode>B8</linqmap:endNode>
+<linqmap:street>St2312</linqmap:street>
+<linqmap:city>Marktheidenfeld</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Sun Jun 28 02:16:37 +0000 2026</pubDate>
+<linqmap:id>1656111876</linqmap:id>
+<linqmap:uuid>1656111876</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>251</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.021628 9.4551 50.021492 9.45511 50.021371 9.455094 50.021221 9.455037 50.021145 9.454976 50.02106 9.454872 50.020955 9.454681 50.020673 9.454004 50.020585 9.453842 50.020455 9.453711 50.020358 9.453672 50.019975 9.453608 50.019833 9.453511 50.019804 9.453464</georss:line>
+<linqmap:endNode>St2317 - Wiesthaler Straße</linqmap:endNode>
+<linqmap:street>St2317 - Partensteiner Straße</linqmap:street>
+<linqmap:city>Wiesthal</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>7</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Mon Jul 6 02:31:31 +0000 2026</pubDate>
+<linqmap:id>637366918</linqmap:id>
+<linqmap:uuid>637366918</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>83</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.002682 9.421497 50.002616 9.421702 50.002536 9.421857 50.002433 9.421992 50.002243 9.422169 50.002172 9.422302</georss:line>
+<linqmap:endNode>Zu den Dorfwiesen</linqmap:endNode>
+<linqmap:street>MSP21 - Steingrundstraße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>jam</title>
+<pubDate>Fri Jun 26 02:15:27 +0000 2026</pubDate>
+<linqmap:id>1097379092</linqmap:id>
+<linqmap:uuid>1097379092</linqmap:uuid>
+<linqmap:speed>0.0</linqmap:speed>
+<linqmap:level>5</linqmap:level>
+<linqmap:turnType>NONE</linqmap:turnType>
+<linqmap:speedKMH>0.0</linqmap:speedKMH>
+<linqmap:length>238</linqmap:length>
+<linqmap:delay>-1</linqmap:delay>
+<georss:line>50.004567 9.417732 50.003731 9.418891 50.003509 9.419237 50.003317 9.419617 50.003124 9.420147</georss:line>
+<linqmap:endNode>MSP21 - Steingrundstraße</linqmap:endNode>
+<linqmap:street>MSP21 - Breidensteiner Straße</linqmap:street>
+<linqmap:city>Neuhütten (Unterfranken)</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:roadType>2</linqmap:roadType>
+</item>
+<item>
+<title>irregularity</title>
+<linqmap:id>550611908</linqmap:id>
+<detectionDate>Tue Jul 7 10:46:28 +0000 2026</detectionDate>
+<detectionDateMillis>1783421188546</detectionDateMillis>
+<updateDate>Tue Jul 7 11:01:52 +0000 2026</updateDate>
+<updateDateMillis>1783422112927</updateDateMillis>
+<georss:line>49.917876 9.35864 49.917636 9.358942 49.916919 9.359891 49.916563 9.360417 49.915904 9.36139 49.915364 9.362295 49.914251 9.364066 49.91384 9.364673 49.913103 9.365711 49.912867 9.366026 49.911646 9.367515 49.911318 9.367887 49.910485 9.368755 49.908241 9.370969 49.907567 9.371684 49.907051 9.372258 49.906728 9.372654 49.906276 9.373265 49.906003 9.37367 49.905508 9.374467 49.905131 9.375101 49.90487 9.375581 49.904375 9.376592 49.903958 9.377562 49.903544 9.37863 49.903114 9.379873 49.902289 9.382374 49.902015 9.383313 49.901374 9.385251 49.901021 9.386245 49.90073 9.386997 49.900304 9.388058 49.899767 9.389266 49.899365 9.390089 49.898962 9.390853 49.898634 9.391454 49.898376 9.391899 49.897957 9.392563 49.89743 9.393324 49.897031 9.393814 49.89565 9.395301 49.895039 9.395942 49.894659 9.39639 49.894212 9.396961 49.893639 9.397835 49.893402 9.398269 49.893106 9.398869 49.892579 9.400037 49.892414 9.400482 49.892104 9.401445 49.891876 9.402269 49.891687 9.403169 49.891546 9.403993 49.891217 9.406135 49.890887 9.40806 49.890469 9.409798 49.890123 9.410914 49.889691 9.412062 49.888991 9.413489 49.888336 9.41461 49.887399 9.416108 49.886539 9.41744 49.885839 9.418431 49.884824 9.419936 49.884461 9.420531 49.883763 9.421819 49.883438 9.422473 49.882951 9.423567 49.882643 9.424318 49.882384 9.425027 49.882045 9.426073 49.881755 9.427033 49.881316 9.428766 49.880524 9.432445 49.880189 9.433905 49.879905 9.435053 49.879428 9.436635 49.878834 9.438191 49.878592 9.438786 49.878149 9.439741 49.877174 9.441415 49.876825 9.442037 49.87639 9.442702 49.875384 9.444177 49.874952 9.444751 49.874661 9.445186 49.872778 9.447676</georss:line>
+<linqmap:type>LARGE</linqmap:type>
+<linqmap:speed>12.2</linqmap:speed>
+<linqmap:regularSpeed>122.29</linqmap:regularSpeed>
+<linqmap:delaySeconds>3060</linqmap:delaySeconds>
+<linqmap:seconds>2455</linqmap:seconds>
+<linqmap:length>8328</linqmap:length>
+<linqmap:trend>-1</linqmap:trend>
+<linqmap:endNode>Marktheidenfeld</linqmap:endNode>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:city>Weibersbrunn</linqmap:city>
+<linqmap:country>GM</linqmap:country>
+<linqmap:severity>5</linqmap:severity>
+<linqmap:jamLevel>4</linqmap:jamLevel>
+<linqmap:driversCount>85</linqmap:driversCount>
+<linqmap:alerts>
+<linqmap:alert>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:40:43 +0000 2026</pubDate>
+<georss:point>49.916445 9.360603</georss:point>
+<linqmap:uuid>3234f033-f97c-4c92-9ded-e43137eefc3b</linqmap:uuid>
+<linqmap:magvar>134</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_HEAVY_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>1</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+</item>
+</linqmap:alert>
+<linqmap:alert>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:46:54 +0000 2026</pubDate>
+<georss:point>49.892653 9.39988</georss:point>
+<linqmap:uuid>54f632c1-fe09-42c5-8bce-4906ff361fb4</linqmap:uuid>
+<linqmap:magvar>125</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_HEAVY_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>2</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+</item>
+</linqmap:alert>
+<linqmap:alert>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 10:51:43 +0000 2026</pubDate>
+<georss:point>49.889109 9.413247</georss:point>
+<linqmap:uuid>ee79972e-5645-4edd-9b0e-e3d5ca92b390</linqmap:uuid>
+<linqmap:magvar>127</linqmap:magvar>
+<linqmap:type>JAM</linqmap:type>
+<linqmap:subtype>JAM_STAND_STILL_TRAFFIC</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>3</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>6</linqmap:reliability>
+</item>
+</linqmap:alert>
+<linqmap:alert>
+<item>
+<title>alert</title>
+<pubDate>Tue Jul 7 11:03:13 +0000 2026</pubDate>
+<georss:point>49.878779 9.438304</georss:point>
+<linqmap:uuid>ebff972c-a75b-4b59-b65d-52a9919b3af8</linqmap:uuid>
+<linqmap:magvar>121</linqmap:magvar>
+<linqmap:type>HAZARD</linqmap:type>
+<linqmap:subtype>HAZARD_ON_ROAD_LANE_CLOSED</linqmap:subtype>
+<linqmap:street>A3 - E41</linqmap:street>
+<linqmap:country>GM</linqmap:country>
+<linqmap:reportByMunicipalityUser>false</linqmap:reportByMunicipalityUser>
+<linqmap:roadType>3</linqmap:roadType>
+<linqmap:reportRating>2</linqmap:reportRating>
+<confidence>0</confidence>
+<linqmap:reliability>5</linqmap:reliability>
+</item>
+</linqmap:alert>
+</linqmap:alerts>
+<linqmap:alertsCount>4</linqmap:alertsCount>
+<linqmap:nComments>0</linqmap:nComments>
+<linqmap:nImages>4</linqmap:nImages>
+<linqmap:nThumbsUp>0</linqmap:nThumbsUp>
+<linqmap:highway>true</linqmap:highway>
+</item>
+</channel>
+</rss>
